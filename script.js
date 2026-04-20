@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 origen: "Cine Club Web" 
             };
 
-            fetch('https://algorithms-farming-plot-church.trycloudflare.com/api/leads', {
+            fetch('https://weighted-media-rooms-lips.trycloudflare.com/api/leads', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(leadData)
@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
             submitBtn.innerText = '🚢 Enviando Consulta...';
 
             try {
-                const response = await fetch('https://algorithms-farming-plot-church.trycloudflare.com/api/leads', {
+                const response = await fetch('https://weighted-media-rooms-lips.trycloudflare.com/api/leads', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify(data)
