@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 origen: "Cine Club Web" 
             };
 
-            fetch('http://localhost:5000/api/leads', {
+            fetch('https://lying-findings-dawn-wind.trycloudflare.com/api/leads', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(leadData)
@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
             submitBtn.innerText = '🚢 Enviando Consulta...';
 
             try {
-                const response = await fetch('http://localhost:5000/api/leads', {
+                const response = await fetch('https://lying-findings-dawn-wind.trycloudflare.com/api/leads', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify(data)
