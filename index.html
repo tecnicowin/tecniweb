@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TecniApp | Cine Club Premier Elite</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <div class="logo">
+                <svg width="60" height="60" viewBox="0 0 100 100" fill="none">
+                    <path d="M50 5L90 25V75L50 95L10 75V25L50 5Z" fill="black" stroke="#FFB740" stroke-width="2" />
+                    <path d="M50 25L50 75M35 35L50 25L65 35M25 45L35 35M75 45L65 35" stroke="#FFB740" stroke-width="5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <div class="logo-text">
+                    <span class="main">TecniApp</span>
+                    <span class="sub">PREMIERE CLUB</span>
+                </div>
+            </div>
+            <nav><a href="#contacto" class="btn btn-outline"
+                    style="padding: 0.5rem 1.2rem; font-size: 0.8rem;">Unirme</a></nav>
+        </header>
+
+        <main>
+            <!-- Hero -->
+            <section class="hero">
+                <p class="subtitle" style="margin-bottom: 1rem;">Gala de Entretenimiento</p>
+                <h1>Jerarquía en cada<br>Fotograma</h1>
+                <p>En TecniApp, su experiencia es nuestra prioridad. **Lo acompañamos en el proceso** hacia el mejor
+                    entretenimiento digital.</p>
+                <div class="cta-group" style="margin-top: 3rem; display: flex; justify-content: center; gap: 2rem;">
+                    <a href="#contacto" class="btn btn-primary">Activar Membresía</a>
+                    <a href="#aliados" class="btn btn-outline">Soy Reseller</a>
+                </div>
+            </section>
+
+            <!-- Tiers Showcase con Branding "Cine Club Premier" -->
+            <section style="padding: 8rem 0;">
+                <div class="section-title">
+                    <p class="subtitle">Niveles de Membrecía</p>
+                    <h2>Elija su Estatus</h2>
+                </div>
+                <div class="card-fan-container">
+                    <div class="card-fan">
+                        <!-- Bronce -->
+                        <div class="credit-card card-bronze tier-card">
+                            <div class="card-chip"></div>
+                            <div class="card-logo-seal"><svg>
+                                    <path d="M50 5L90 25V75L50 95L10 75V25L50 5Z" />
+                                </svg></div>
+                            <div class="card-name">BRONZE</div>
+                            <div class="card-number"
+                                style="font-size: 0.9rem; letter-spacing: 5px; margin-top: 0.5rem; font-weight: 800;">
+                                CINE CLUB PREMIER</div>
+                        </div>
+                        <!-- Plata -->
+                        <div class="credit-card card-silver tier-card">
+                            <div class="card-chip"></div>
+                            <div class="card-logo-seal"><svg>
+                                    <path d="M50 5L90 25V75L50 95L10 75V25L50 5Z" />
+                                </svg></div>
+                            <div class="card-name">SILVER</div>
+                            <div class="card-number"
+                                style="font-size: 0.9rem; letter-spacing: 5px; margin-top: 0.5rem; font-weight: 800;">
+                                CINE CLUB PREMIER</div>
+                        </div>
+                        <!-- Oro -->
+                        <div class="credit-card card-gold tier-card">
+                            <div class="card-chip"></div>
+                            <div class="card-logo-seal"><svg>
+                                    <path d="M50 5L90 25V75L50 95L10 75V25L50 5Z" />
+                                </svg></div>
+                            <div class="card-name">GOLD</div>
+                            <div class="card-number"
+                                style="font-size: 0.9rem; letter-spacing: 5px; margin-top: 0.5rem; font-weight: 800;">
+                                CINE CLUB PREMIER</div>
+                            <i data-lucide="crown"
+                                style="position: absolute; bottom: 3rem; right: 3rem; width: 40px; opacity: 0.2;"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Resto de secciones... -->
+            <section id="aliados"
+                style="background: #000; padding: 6rem 2rem; border-radius: 50px; color: white; text-align: center; border: 2px solid rgba(255,183,64,0.3); margin-bottom: 8rem;">
+                <p class="subtitle" style="color: var(--secondary);">Alianza Estratégica</p>
+                <h2 style="color: white; margin-bottom: 2rem;">Haga crecer su Negocio</h2>
+                <p style="max-width: 850px; margin: 0 auto 3rem; font-size: 1.2rem; opacity: 0.9;">
+                    Le entregamos las herramientas profesionales y **lo acompañamos en cada etapa de su proceso** hacia
+                    un crecimiento seguro y profesional.
+                </p>
+                <button onclick="solicitarReseller()" class="btn btn-primary"
+                    style="background: var(--secondary); color: #000;">Solicitar Herramientas</button>
+            </section>
+
+            <!-- Contact/Lealtad... -->
+            <section id="contacto">
+                <div class="section-title">
+                    <p class="subtitle">Compromiso Premiere</p>
+                    <h2>Inicie su Aventura Aquí</h2>
+                </div>
+                <div class="contact-flex">
+                    <div class="benefit-list">
+                        <div class="benefit-item">
+                            <i data-lucide="shield-check"></i>
+                            <span>Soporte Humano: Lo acompañamos siempre</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i data-lucide="users"></i>
+                            <span>Ganancia Real por Referidos</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i data-lucide="heart" style="color: #ff4757;"></i>
+                            <span>Nuestro Programa de Lealtad: Porque tú eres importante</span>
+                        </div>
+                    </div>
+                    <div class="rsvp-form">
+                        <form id="leadForm">
+                            <div class="form-group">
+                                <label>Nombre Completo</label>
+                                <input type="text" id="nombre" placeholder="Su Nombre" required>
+                            </div>
+                            <div class="form-group">
+                                <label>WhatsApp Directo</label>
+                                <input type="tel" id="whatsapp" placeholder="+58" required>
+                            </div>
+                            <input type="hidden" id="interes" value="Cine Club">
+                            <button type="submit" class="btn btn-primary form-btn">Iniciar Proceso</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <!-- SECCIÓN SOPORTE Y CONSULTAS -->
+            <section id="soporte" style="background: #fdfdfd; padding: 6rem 2rem; border-radius: 50px; text-align: center; border: 1px solid rgba(0,0,0,0.05); margin-bottom: 8rem; box-shadow: 0 20px 40px rgba(0,0,0,0.02);">
+                <p class="subtitle" style="color: var(--primary);">Atención al Socio</p>
+                <h2 style="margin-bottom: 2rem;">¿Ya eres parte del Club?<br>Centro de Ayuda</h2>
+                <p style="max-width: 600px; margin: 0 auto 3rem; opacity: 0.7;">Si tienes alguna duda técnica, necesitas renovar o quieres consultar precios, escríbenos aquí y te atenderemos de inmediato.</p>
+                
+                <form id="supportForm" style="max-width: 500px; margin: 0 auto; text-align: left;">
+                    <div style="margin-bottom: 1.5rem;">
+                        <label style="display: block; margin-bottom: 0.5rem; font-weight: 800; font-size: 0.8rem; text-transform: uppercase;">Tu Nombre</label>
+                        <input type="text" id="sup_nombre" style="width: 100%; padding: 1rem; border: 2px solid #eee; border-radius: 12px; font-family: inherit;" placeholder="Ej: Juan Pérez" required>
+                    </div>
+                    <div style="margin-bottom: 1.5rem;">
+                        <label style="display: block; margin-bottom: 0.5rem; font-weight: 800; font-size: 0.8rem; text-transform: uppercase;">WhatsApp</label>
+                        <input type="tel" id="sup_whatsapp" style="width: 100%; padding: 1rem; border: 2px solid #eee; border-radius: 12px; font-family: inherit;" placeholder="Ej: 04241234567" required>
+                    </div>
+                    <div style="margin-bottom: 2rem;">
+                        <label style="display: block; margin-bottom: 0.5rem; font-weight: 800; font-size: 0.8rem; text-transform: uppercase;">¿En qué podemos ayudarte?</label>
+                        <textarea id="sup_mensaje" style="width: 100%; padding: 1rem; border: 2px solid #eee; border-radius: 12px; font-family: inherit; height: 120px;" placeholder="Describe tu consulta..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Enviar Consulta al CRM</button>
+                </form>
+            </section>
+
+        </main>
+    </div>
+
+    <!-- Footer... -->
+    <footer style="text-align: center; padding: 4rem 2rem; border-top: 1px solid rgba(0,0,0,0.05); background: white;">
+        <p style="color: #000; font-weight: 900; font-size: 1.2rem; text-transform: uppercase;">ELECTRONICA TECNICOWIN
+            2018 C.A.</p>
+        <p style="color: #111; font-size: 0.9rem; font-weight: 800;">RIF J 411824518</p>
+        <p
+            style="color: #000; font-family: 'Montserrat', sans-serif; font-weight: 800; font-style: italic; margin-top: 1.5rem;">
+            Cine Club Premier - Jerarquía Digital</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>lucide.createIcons();</script>
+</body>
+
+</html>

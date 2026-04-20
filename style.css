@@ -1,0 +1,99 @@
+:root {
+    --primary: #DF711B;
+    --secondary: #FFB740;
+    --text-main: #000000;
+    --font-heading: 'Montserrat', sans-serif;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #fff; color: var(--text-main); font-family: 'Montserrat', sans-serif; overflow-x: hidden; }
+
+.container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+
+header { height: 100px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid rgba(0,0,0,0.05); }
+.logo { display: flex; align-items: center; gap: 1rem; }
+.logo-text .main { font-size: 2rem; font-weight: 900; letter-spacing: -1px; line-height: 1; }
+.logo-text .sub { font-size: 0.75rem; font-weight: 800; color: var(--primary); letter-spacing: 3px; text-transform: uppercase; }
+
+/* HERO */
+.hero { padding: 8rem 0 4rem; text-align: center; }
+.hero h1 { font-size: 5.5rem; font-weight: 900; line-height: 1; margin-bottom: 2rem; letter-spacing: -3px; }
+.hero p { font-size: 1.2rem; font-weight: 600; opacity: 0.7; max-width: 600px; margin: 0 auto; }
+
+.btn { padding: 1.2rem 3rem; border-radius: 15px; font-weight: 900; text-decoration: none; display: inline-block; text-transform: uppercase; transition: 0.3s ease; cursor: pointer; }
+.btn-primary { background: #000; color: #fff; }
+.btn-outline { border: 3px solid #000; color: #000; }
+
+/* CAROUSEL */
+.apps-carousel { overflow: hidden; padding: 5rem 0; mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent); }
+.marquee-content { display: flex; gap: 6rem; animation: scroll 25s linear infinite; }
+.app-item { display: flex; flex-direction: column; align-items: center; gap: 1rem; font-weight: 900; font-size: 1.1rem; }
+.app-item img { width: 100px; height: 100px; border-radius: 25px; box-shadow: 0 15px 30px rgba(0,0,0,0.1); }
+
+@keyframes scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+/* CARD FAN (Realismo Metálico) */
+.card-fan-container { display: flex; justify-content: center; align-items: center; height: 500px; perspective: 1200px; margin-top: 2rem; }
+.card-fan { position: relative; width: 400px; height: 250px; }
+
+.tier-card {
+    position: absolute; width: 400px; height: 250px; border-radius: 25px; padding: 3rem;
+    display: flex; flex-direction: column; justify-content: center; align-items: center;
+    transition: all 0.7s cubic-bezier(0.23, 1, 0.32, 1); overflow: hidden;
+    box-shadow: 0 30px 70px rgba(0,0,0,0.3);
+}
+
+.tier-card::after {
+    content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%;
+    background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
+    transform: rotate(35deg); pointer-events: none;
+}
+
+.card-bronze { background: linear-gradient(135deg, #4d2d18 0%, #a67049 50%, #4d2d18 100%) !important; transform: translateX(-140px) rotate(-12deg); z-index: 1; color: #fff; }
+.card-silver { background: linear-gradient(135deg, #757575 0%, #f5f7fa 50%, #757575 100%) !important; transform: translateX(0) rotate(-4deg); z-index: 2; color: #000; }
+.card-gold { background: linear-gradient(135deg, #bf953f 0%, #fcf6ba 45%, #b38728 50%, #fbf5b7 55%, #aa771c 100%) !important; transform: translateX(140px) rotate(8deg); z-index: 3; color: #000; }
+
+.card-fan:hover .card-bronze { transform: translateX(-280px) rotate(-18deg); }
+.card-fan:hover .card-silver { transform: translateY(-50px); }
+.card-fan:hover .card-gold { transform: translateX(280px) rotate(18deg); }
+
+.card-chip { position: absolute; top: 3rem; left: 3rem; width: 60px; height: 45px; background: linear-gradient(135deg, #f1f1f1, #ccc); border-radius: 10px; }
+.card-gold .card-chip { background: linear-gradient(135deg, #FDE49C, #FFB740); }
+.card-name { font-size: 3.5rem; font-weight: 900; letter-spacing: 5px; }
+.card-number { font-size: 0.8rem; font-weight: 800; letter-spacing: 6px; margin-top: 0.5rem; opacity: 0.8; }
+.card-logo-seal { position: absolute; top: 2rem; right: 2rem; opacity: 0.3; }
+.card-logo-seal svg { width: 50px; height: 50px; stroke: currentColor; stroke-width: 6; fill: none; }
+
+/* CONTACT SECTION (Corregido Centro y Tipografía) */
+#contacto { padding: 8rem 0; }
+.section-title { text-align: center; margin-bottom: 5rem; }
+.subtitle { color: var(--primary); font-weight: 900; letter-spacing: 6px; text-transform: uppercase; font-size: 0.9rem; }
+h2 { font-size: 4rem; font-weight: 900; letter-spacing: -1.5px; margin-top: 0.5rem; }
+
+.contact-flex { display: flex; justify-content: center; align-items: flex-start; gap: 5rem; max-width: 1100px; margin: 0 auto; }
+
+.benefit-list { flex: 1; max-width: 450px; }
+.benefit-item {
+    background: #f8fafc; padding: 2rem; border-radius: 20px; margin-bottom: 1.5rem;
+    font-weight: 800; font-size: 1.3rem; display: flex; align-items: center; gap: 1.5rem;
+    border-left: 8px solid #000; box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+}
+.benefit-item i { width: 30px; height: 30px; }
+
+.rsvp-form { flex: 1; max-width: 550px; background: #fff; padding: 4rem; border-radius: 35px; box-shadow: 0 40px 100px rgba(0,0,0,0.07); border: 1px solid rgba(0,0,0,0.05); }
+.form-group { margin-bottom: 2rem; }
+.form-group label { display: block; font-weight: 900; font-size: 1.1rem; margin-bottom: 0.8rem; text-transform: uppercase; }
+.form-group input { width: 100%; padding: 1.4rem; border: 2.5px solid #eee; border-radius: 15px; font-weight: 700; font-size: 1.1rem; font-family: 'Montserrat', sans-serif; }
+.form-group input:focus { border-color: #000; outline: none; }
+
+.form-btn { width: 100%; cursor: pointer; font-size: 1.1rem; }
+
+/* WHATSAPP */
+.whatsapp-float { position: fixed; bottom: 40px; right: 40px; background: #25d366; width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff; z-index: 1000; box-shadow: 0 15px 40px rgba(0,0,0,0.2); transition: 0.3s; }
+.whatsapp-float:hover { transform: scale(1.1); }
+
+@media (max-width: 900px) {
+    .contact-flex { flex-direction: column; align-items: center; }
+    .hero h1 { font-size: 3.5rem; }
+    .card-fan-container { transform: scale(0.6); height: 350px; }
+}
