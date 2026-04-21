@@ -123,4 +123,27 @@ document.addEventListener('DOMContentLoaded', () => {
     sections.forEach(section => {
         observer.observe(section);
     });
+
+    // --- LIGHTBOX DE PROMOCIONES ---
+    const lightbox = document.getElementById("promoLightbox");
+    const lightboxImg = document.getElementById("lightboxImg");
+    const closeBtn = document.querySelector(".close-lightbox");
+
+    if (lightbox && lightboxImg) {
+        document.querySelectorAll(".promo-card img").forEach(img => {
+            img.addEventListener("click", function() {
+                lightbox.style.display = "block";
+                lightboxImg.src = this.src;
+                document.body.style.overflow = "hidden"; // Desactivar scroll del body
+            });
+        });
+
+        // Cerrar al hacer clic en el fondo o en el botón X
+        lightbox.addEventListener("click", function(e) {
+            if (e.target !== lightboxImg) {
+                lightbox.style.display = "none";
+                document.body.style.overflow = "auto"; // Reactivar scroll
+            }
+        });
+    }
 });
