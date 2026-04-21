@@ -32,6 +32,19 @@
         </header>
 
         <main>
+            <!-- Sección de Promociones Destacadas -->
+            <section class="promociones-container">
+                <div class="promo-card">
+                    <img src="promo1.jpg" alt="Promoción Spotify">
+                </div>
+                <div class="promo-card">
+                    <img src="promo2.jpg" alt="Promoción HBO Apple">
+                </div>
+                <div class="promo-card">
+                    <img src="promo3.jpg" alt="Promoción Creative Cloud">
+                </div>
+            </section>
+
             <!-- Hero -->
             <section class="hero">
                 <p class="subtitle" style="margin-bottom: 1rem;">Gala de Entretenimiento</p>
@@ -142,23 +155,36 @@
                 </div>
             </section>
             <!-- SECCIÓN SOPORTE Y CONSULTAS -->
-            <section id="soporte" style="background: #fdfdfd; padding: 6rem 2rem; border-radius: 50px; text-align: center; border: 1px solid rgba(0,0,0,0.05); margin-bottom: 8rem; box-shadow: 0 20px 40px rgba(0,0,0,0.02);">
+            <section id="soporte"
+                style="background: #fdfdfd; padding: 6rem 2rem; border-radius: 50px; text-align: center; border: 1px solid rgba(0,0,0,0.05); margin-bottom: 8rem; box-shadow: 0 20px 40px rgba(0,0,0,0.02);">
                 <p class="subtitle" style="color: var(--primary);">Atención al Socio</p>
                 <h2 style="margin-bottom: 2rem;">¿Ya eres parte del Club?<br>Centro de Ayuda</h2>
-                <p style="max-width: 600px; margin: 0 auto 3rem; opacity: 0.7;">Si tienes alguna duda técnica, necesitas renovar o quieres consultar precios, escríbenos aquí y te atenderemos de inmediato.</p>
-                
+                <p style="max-width: 600px; margin: 0 auto 3rem; opacity: 0.7;">Si tienes alguna duda técnica, necesitas
+                    renovar o quieres consultar precios, escríbenos aquí y te atenderemos de inmediato.</p>
+
                 <form id="supportForm" style="max-width: 500px; margin: 0 auto; text-align: left;">
                     <div style="margin-bottom: 1.5rem;">
-                        <label style="display: block; margin-bottom: 0.5rem; font-weight: 800; font-size: 0.8rem; text-transform: uppercase;">Tu Nombre</label>
-                        <input type="text" id="sup_nombre" style="width: 100%; padding: 1rem; border: 2px solid #eee; border-radius: 12px; font-family: inherit;" placeholder="Ej: Juan Pérez" required>
+                        <label
+                            style="display: block; margin-bottom: 0.5rem; font-weight: 800; font-size: 0.8rem; text-transform: uppercase;">Tu
+                            Nombre</label>
+                        <input type="text" id="sup_nombre"
+                            style="width: 100%; padding: 1rem; border: 2px solid #eee; border-radius: 12px; font-family: inherit;"
+                            placeholder="Ej: Juan Pérez" required>
                     </div>
                     <div style="margin-bottom: 1.5rem;">
-                        <label style="display: block; margin-bottom: 0.5rem; font-weight: 800; font-size: 0.8rem; text-transform: uppercase;">WhatsApp</label>
-                        <input type="tel" id="sup_whatsapp" style="width: 100%; padding: 1rem; border: 2px solid #eee; border-radius: 12px; font-family: inherit;" placeholder="Ej: 04241234567" required>
+                        <label
+                            style="display: block; margin-bottom: 0.5rem; font-weight: 800; font-size: 0.8rem; text-transform: uppercase;">WhatsApp</label>
+                        <input type="tel" id="sup_whatsapp"
+                            style="width: 100%; padding: 1rem; border: 2px solid #eee; border-radius: 12px; font-family: inherit;"
+                            placeholder="Ej: 04241234567" required>
                     </div>
                     <div style="margin-bottom: 2rem;">
-                        <label style="display: block; margin-bottom: 0.5rem; font-weight: 800; font-size: 0.8rem; text-transform: uppercase;">¿En qué podemos ayudarte?</label>
-                        <textarea id="sup_mensaje" style="width: 100%; padding: 1rem; border: 2px solid #eee; border-radius: 12px; font-family: inherit; height: 120px;" placeholder="Describe tu consulta..." required></textarea>
+                        <label
+                            style="display: block; margin-bottom: 0.5rem; font-weight: 800; font-size: 0.8rem; text-transform: uppercase;">¿En
+                            qué podemos ayudarte?</label>
+                        <textarea id="sup_mensaje"
+                            style="width: 100%; padding: 1rem; border: 2px solid #eee; border-radius: 12px; font-family: inherit; height: 120px;"
+                            placeholder="Describe tu consulta..." required></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary" style="width: 100%;">Enviar Consulta al CRM</button>
                 </form>
